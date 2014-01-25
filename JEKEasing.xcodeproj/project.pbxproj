@@ -21,8 +21,8 @@
 		45BB60DC1894482A004B4B5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BB60BE1894482A004B4B5F /* UIKit.framework */; };
 		45BB60E41894482A004B4B5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45BB60E21894482A004B4B5F /* InfoPlist.strings */; };
 		45BB60E61894482A004B4B5F /* JEKEasingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB60E51894482A004B4B5F /* JEKEasingTests.m */; };
-		45BB60F118944DF0004B4B5F /* UIView+JEKEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB60F018944DF0004B4B5F /* UIView+JEKEasing.m */; };
-		45BB60F418944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB60F318944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.m */; };
+		45BB60FA18948461004B4B5F /* CAMediaTimingFunction+JEKEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB60F718948461004B4B5F /* CAMediaTimingFunction+JEKEasing.m */; };
+		45BB60FB18948461004B4B5F /* UIView+JEKEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB60F918948461004B4B5F /* UIView+JEKEasing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		45BB60E11894482A004B4B5F /* JEKEasingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JEKEasingTests-Info.plist"; sourceTree = "<group>"; };
 		45BB60E31894482A004B4B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45BB60E51894482A004B4B5F /* JEKEasingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEKEasingTests.m; sourceTree = "<group>"; };
-		45BB60EF18944DF0004B4B5F /* UIView+JEKEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JEKEasing.h"; sourceTree = "<group>"; };
-		45BB60F018944DF0004B4B5F /* UIView+JEKEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JEKEasing.m"; sourceTree = "<group>"; };
-		45BB60F218944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+JEKEasing.h"; sourceTree = "<group>"; };
-		45BB60F318944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAMediaTimingFunction+JEKEasing.m"; sourceTree = "<group>"; };
+		45BB60F618948461004B4B5F /* CAMediaTimingFunction+JEKEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+JEKEasing.h"; path = "JEKEasing/JEKEasing/CAMediaTimingFunction+JEKEasing.h"; sourceTree = "<group>"; };
+		45BB60F718948461004B4B5F /* CAMediaTimingFunction+JEKEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAMediaTimingFunction+JEKEasing.m"; path = "JEKEasing/JEKEasing/CAMediaTimingFunction+JEKEasing.m"; sourceTree = "<group>"; };
+		45BB60F818948461004B4B5F /* UIView+JEKEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JEKEasing.h"; path = "JEKEasing/JEKEasing/UIView+JEKEasing.h"; sourceTree = "<group>"; };
+		45BB60F918948461004B4B5F /* UIView+JEKEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JEKEasing.m"; path = "JEKEasing/JEKEasing/UIView+JEKEasing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,8 @@
 		45BB60AE1894482A004B4B5F = {
 			isa = PBXGroup;
 			children = (
-				45BB60C01894482A004B4B5F /* JEKEasing */,
+				45BB60C01894482A004B4B5F /* App */,
+				45BB60F518948419004B4B5F /* JEKEasing */,
 				45BB60DF1894482A004B4B5F /* JEKEasingTests */,
 				45BB60B91894482A004B4B5F /* Frameworks */,
 				45BB60B81894482A004B4B5F /* Products */,
@@ -115,21 +116,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		45BB60C01894482A004B4B5F /* JEKEasing */ = {
+		45BB60C01894482A004B4B5F /* App */ = {
 			isa = PBXGroup;
 			children = (
-				45BB60F218944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.h */,
-				45BB60F318944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.m */,
 				45BB60C91894482A004B4B5F /* JEKAppDelegate.h */,
 				45BB60CA1894482A004B4B5F /* JEKAppDelegate.m */,
 				45BB60CF1894482A004B4B5F /* JEKEasingDemoViewController.h */,
 				45BB60D01894482A004B4B5F /* JEKEasingDemoViewController.m */,
 				45BB60CC1894482A004B4B5F /* Main.storyboard */,
-				45BB60EF18944DF0004B4B5F /* UIView+JEKEasing.h */,
-				45BB60F018944DF0004B4B5F /* UIView+JEKEasing.m */,
 				45BB60D21894482A004B4B5F /* Images.xcassets */,
 				45BB60C11894482A004B4B5F /* Supporting Files */,
 			);
+			name = App;
 			path = JEKEasing;
 			sourceTree = "<group>";
 		};
@@ -160,6 +158,17 @@
 				45BB60E21894482A004B4B5F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45BB60F518948419004B4B5F /* JEKEasing */ = {
+			isa = PBXGroup;
+			children = (
+				45BB60F618948461004B4B5F /* CAMediaTimingFunction+JEKEasing.h */,
+				45BB60F718948461004B4B5F /* CAMediaTimingFunction+JEKEasing.m */,
+				45BB60F818948461004B4B5F /* UIView+JEKEasing.h */,
+				45BB60F918948461004B4B5F /* UIView+JEKEasing.m */,
+			);
+			name = JEKEasing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BB60C71894482A004B4B5F /* main.m in Sources */,
+				45BB60FB18948461004B4B5F /* UIView+JEKEasing.m in Sources */,
 				45BB60D11894482A004B4B5F /* JEKEasingDemoViewController.m in Sources */,
-				45BB60F118944DF0004B4B5F /* UIView+JEKEasing.m in Sources */,
-				45BB60F418944E00004B4B5F /* CAMediaTimingFunction+JEKEasing.m in Sources */,
+				45BB60FA18948461004B4B5F /* CAMediaTimingFunction+JEKEasing.m in Sources */,
 				45BB60CB1894482A004B4B5F /* JEKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
